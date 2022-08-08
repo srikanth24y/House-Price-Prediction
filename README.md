@@ -16,18 +16,39 @@ The company wants to know:
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-We are required to model the price of houses with the available independent variables. This model will then be used by the management to understand how exactly the prices vary with the variables. They can accordingly manipulate the strategy of the firm and concentrate on areas that will yield high returns. Further, the model will be a good way for management to understand the pricing dynamics of a new market.
-Please find the dataset [link] (https://github.com/srikanth24y/House-Price-Prediction/main/train.csv)
-Please find the data definition [link] (https://github.com/srikanth24y/House-Price-Prediction/main/data_dictionary.txt)
+We are required to model the price of houses with the available independent variables. This model will then be used by the management to understand how exactly the prices vary with the variables. They can accordingly manipulate the strategy of the firm and concentrate on areas that will yield high returns. Further, the model will be a good way for management to understand the pricing dynamics of a new market.<br/><br/>
+Please find the dataset [link](https://github.com/srikanth24y/House-Price-Prediction/blob/main/train.csv)<br/>
+Please find the data definition [link](https://github.com/srikanth24y/House-Price-Prediction/blob/main/data_description.txt)
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
+- Ridge model optimal lambda λ = 3.5
+- Lasso Model optimal lambda λ = 0.001
+- Ridge Model Train R-Square: 0.94 and Test R-Square: 0.90
+- Lasso Model Train R-Square: 0.94 and Test R-Square: 0.90
+##### Both Ridge and Lasso perform almost equally, since lasso can help in feature elimination and model may be more robust hence we are going to consider Lasso.
+##### Top 10 Significant features
+<table>
+    <thead>
+        <tr style="background: #72A0C1; color: #fff; font-weight: 600;">
+            <th>Features</th>	
+            <th>Coefficient</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>OverallQual_10</td><td>1.300821</td></tr>
+        <tr><td>OverallQual_9</td><td>1.006531</td></tr>
+        <tr><td>Neighborhood_StoneBr</td><td>0.397361</td></tr>
+        <tr><td>GrLivArea</td><td>0.363124</td></tr>
+        <tr><td>Neighborhood_Crawfor</td><td>0.351231</td></tr>
+        <tr><td>SaleType_New</td><td>0.324428</td></tr>
+        <tr><td>OverallQual_8</td><td>0.316113</td></tr>
+        <tr><td>OverallCond_9</td><td>0.252729</td></tr>
+        <tr><td>Exterior1st_BrkFace</td><td>0.245535</td></tr>
+        <tr><td>Functional_Typ</td><td>0.217962</td></tr>
+    </tbody>
+</table>
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
